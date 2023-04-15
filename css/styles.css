@@ -125,7 +125,7 @@ form {
 }
 
 input {
-  border: 2px solid #E5E7EB;
+  border: 1px solid #E5E7EB;
   border-radius: 0.3em;
   width: 30ch;
   padding: 0.4em;
@@ -134,6 +134,14 @@ input {
 
 input::placeholder {
   font-style: italic;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  border: 1px solid green;
 }
 
 ul {
@@ -200,9 +208,9 @@ button {
   left: 0;
   right: 0;
   padding: 0.8em 1.2em;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #bbb;
   color: black;
-  border: 2px solid black;
+  border: 2px solid #999;
   border-radius: 0.3em;
   font-weight: bold;
   transition: background-color 0.15s, color 0.15s;
