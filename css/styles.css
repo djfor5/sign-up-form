@@ -4,6 +4,7 @@
 } */
 
 body {
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -97,7 +98,43 @@ img {
   padding: 10% 5%;
 }
 
+form {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 input {
   border: 1px solid #E5E7EB;
   border-radius: 0.3em;
+  width: 30ch;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+li {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li label {
+  width: 15ch;
+}
+
+.submit {
+  display: flex;
+}
+
+button {
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 0.5em 1em;
 }
