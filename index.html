@@ -20,38 +20,43 @@
       </div>
     </div>
     <div id="right-pane">
-      <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
-      <p>You <em>know</em> you want to.</p>
+      <p class="call-to-action">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p class="call-to-action">You <em>know</em> you want to.</p>
 
       <form action="#" method="post">
         <ul>
           <li>
             <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" required>
+            <input type="text" name="first-name" id="first-name" required placeholder="John">
           </li>
           <li>
             <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name" required>
+            <input type="text" name="last-name" id="last-name" required placeholder="Smith">
           </li>
           <li>
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" required placeholder="john.smith@gmail.com">
           </li>
           <li>
             <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone" required>
+            <input type="tel" name="phone" id="phone" required placeholder="0400 000 000">
           </li>
           <li>
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <input class="error" type="password" name="password" id="password" required>
+          </li>
+          <li>
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input class="error" type="password" name="confirm-password" id="confirm-password" required>
           </li>
         </ul>
         <div class="submit">
           <button type="submit">Create Account</button>
         </div>
       </form>
-
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <div class="existing-account-container">
+        <span id="existing-account">Already have an account? <a href="#" id="log-in">Log in</a></span>
+      </div>
     </div>
   </div>
 </body>
