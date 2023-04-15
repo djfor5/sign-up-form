@@ -14,7 +14,7 @@ body {
 }
 
 #left-pane {
-  max-width: 35%;
+  max-width: 40%;
   position: relative;
 }
 
@@ -45,12 +45,56 @@ h1 {
   /* font-family: Norse-Bold; */
 }
 
-#right-pane {
-  padding: 10% 5%;
-}
-
 img {
   max-width: 100%;
+}
+
+.credit {
+  position: absolute;
+  margin: 0 auto;
+  left: 20%;
+  right: 20%;
+  bottom: 2%;
+
+  padding: 0.2em 0.4em;
+
+  text-align: center;
+  
+  border-radius: 0.2em;
+  background-color: rgba(0,0,0,0.6);
+  color: rgb(255,255,255,0.8);
+}
+
+#credit {
+  font-size: min(0.8rem,2vw);
+  margin: 0;
+}
+
+#credit a {
+  font-weight: bold;
+}
+
+#credit a:link, #credit a:visited {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+#credit a:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: rgb(255,255,255,0.9);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+#credit a:active {
+  background-color: rgba(0,0,0,0.9);
+  color: rgb(255,255,255,1);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+#right-pane {
+  padding: 10% 5%;
 }
 
 input {
