@@ -128,7 +128,7 @@ input {
   border: 2px solid #E5E7EB;
   border-radius: 0.3em;
   width: 30ch;
-  padding: 0;
+  padding: 0.4em;
   margin: 0;
 }
 
@@ -163,7 +163,32 @@ li {
 li label {
   padding: 0;
   margin: 0;
-  width: 20ch;
+  width: 21ch;
+}
+
+span[aria-label="required"] {
+  color: red;
+}
+
+label[for$="password"] {
+  position: relative;
+}
+
+label[for$="password"]:hover::after {
+  content: "Password must contain at least 8 characters, including 1 or more uppercase letters, 1 or more lowercase letters, 2 or more numbers, and 1 or more special character !@#$%^&*()";
+  position: absolute;
+  top: 1em;
+  z-index: 1;
+
+  padding: 0.2em 0.4em;
+  width: 25ch;
+
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  
+  font-size: 0.7rem;
+  font-style: italic;
 }
 
 .submit {
