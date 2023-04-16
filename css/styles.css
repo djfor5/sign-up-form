@@ -75,35 +75,35 @@ img {
   
   border-radius: 0.3em;
   background-color: rgba(0,0,0,0.6);
-  color: rgb(255,255,255,0.8);
+  color: rgb(255,255,255,0.7);
 }
 
 #credit {
   font-size: min(0.8rem,2vw);
   margin: 0;
+  padding: 0;
+}
+
+#credit a:link, #credit a:visited {
+  color: unset;
+  text-decoration: none;
 }
 
 #credit a {
   font-weight: bold;
-}
-
-#credit a:link, #credit a:visited {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 #credit a:hover {
   background-color: rgba(0,0,0,0.8);
-  color: rgb(255,255,255,0.9);
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  color: rgb(255,255,255,0.85);
 }
 
 #credit a:active {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.95);
   color: rgb(255,255,255,1);
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
 }
 
 
