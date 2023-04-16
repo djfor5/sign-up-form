@@ -1,7 +1,7 @@
-/* @font-face {
-  font-family: Norse-Bold;
-  src: url(./fonts/Norse-Bold.otf) format('opentype');
-} */
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('../fonts/2Dumb-webfont.woff') format('woff');
+}
 
 body {
   font-family: sans-serif;
@@ -29,7 +29,7 @@ a, button {
   position: absolute;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-wrap: wrap;
   top: 2%;
   background-color: rgba(0,0,0,0.3);
@@ -49,13 +49,11 @@ a, button {
 }
 
 h1 {
-  margin-top: 0.5em;
-  margin-bottom: 0;
-  font-size: max(1.5rem, 2.5vw);
+  font-size: max(1.5rem, 2.3vw);
   color: white;
   opacity: 0.7;
   text-align: center;
-  /* font-family: Norse-Bold; */
+  font-family: 'MyWebFont', sans-serif;
 }
 
 img {
