@@ -193,7 +193,7 @@ label[for$="password"] {
 }
 
 label[for$="password"]:hover::after {
-  content: "Password must contain at least 8 characters, including 1 or more uppercase letters, 1 or more lowercase letters, 2 or more numbers, and 1 or more special character !@#$%^&*()";
+  content: "Password must contain at least 8 characters, including at least 1 uppercase letter, at least 1 lowercase letter, at least 1 number or special character";
   position: absolute;
   top: 1em;
   z-index: 1;

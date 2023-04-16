@@ -43,11 +43,11 @@
           </li>
           <li>
             <label for="password">PASSWORD<span aria-label="required"> *</span></label>
-            <input class="error" type="password" name="password" id="password" minlength="8" placeholder=" " required>
+            <input class="error" type="password" name="password" id="password" minlength="8" placeholder=" " pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
           </li>
           <li>
             <label for="confirm-password">CONFIRM PASSWORD<span aria-label="required"> *</span></label>
-            <input class="error" type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder=" " required>
+            <input class="error" type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder=" " pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
           </li>
         </ul>
         <div class="submit">
