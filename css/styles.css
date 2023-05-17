@@ -3,6 +3,12 @@
 	src: url('../fonts/2Dumb-webfont.woff') format('woff');
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   padding: 0;
